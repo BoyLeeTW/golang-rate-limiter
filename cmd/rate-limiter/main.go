@@ -31,5 +31,5 @@ func main() {
 
 	router := router.New(rateLimiterController, normalController)
 
-	router.Run(":8081")
+	router.Run(":8080")
 }
