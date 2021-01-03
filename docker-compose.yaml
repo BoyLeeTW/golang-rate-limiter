@@ -1,0 +1,14 @@
+version: '3'
+services:
+  memcached:
+    image: memcached:1.6.9
+    ports: 
+      - 11211:11211
+  rate-limiter:
+    build: ./
+    environment: 
+      MEMCACHED_ADDRESS: memcached:11211
+    ports:
+      - 8080:8080
+    depends_on: 
+      - memcached
