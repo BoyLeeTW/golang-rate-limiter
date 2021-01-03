@@ -10,5 +10,5 @@ A demo application with rate-limiter middleware:
 - Prerequisites:
   - docker [installed](https://www.docker.com)
   - docker-compose [installed](https://docs.docker.com/compose/install/)
-- docker-compose up -d
-- endpoint: GET localhost:8080
+- run `docker-compose up -d`
+- send GET request to endpoint `localhost:8080`
